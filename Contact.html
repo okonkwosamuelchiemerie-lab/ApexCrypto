@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact ApexCrypto - Get help and support">
+  <title>Contact Us - ApexCrypto</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="home_crypto.html" class="logo">
+        <img src="./Images/Screenshot_2026-03-11_111330-removebg-preview.png" alt="ApexCrypto logo">
+        <span>ApexCrypto</span>
+      </a>
+
+      <ul>
+        <li><a href="home_crypto.html">Home</a></li>
+        <li><a href="Prices.html" data-auth-only>Prices</a></li>
+        <li><a href="Payment.html" data-auth-only>Payment</a></li>
+        <li><a href="Contact.html" class="active-nav" data-auth-only>Contact Us</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="register.html" class="btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contact-container">
+      <section class="contact-hero">
+        <h1>Get In Touch</h1>
+        <p class="subtitle">We're here to help. Have questions or issues? Contact us today!</p>
+      </section>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <section class="contact-info-section">
+          <h2>Our Contact Information</h2>
+          
+          <div class="info-card">
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <h3>Email Address</h3>
+                <p id="emailDisplay" class="contact-value">support@apexcrypto.com</p>
+                <button class="btn-edit" onclick="toggleEditEmail()">Edit</button>
+                <div id="emailEditForm" class="edit-form" style="display: none;">
+                  <input type="email" id="emailInput" placeholder="Enter your email">
+                  <div class="edit-buttons">
+                    <button class="btn-save" onclick="saveEmail()">Save</button>
+                    <button class="btn-cancel" onclick="cancelEditEmail()">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📱</div>
+              <div class="info-content">
+                <h3>Phone Number</h3>
+                <p id="phoneDisplay" class="contact-value">+1 (555) 123-4567</p>
+                <button class="btn-edit" onclick="toggleEditPhone()">Edit</button>
+                <div id="phoneEditForm" class="edit-form" style="display: none;">
+                  <input type="tel" id="phoneInput" placeholder="Enter your phone number">
+                  <div class="edit-buttons">
+                    <button class="btn-save" onclick="savePhone()">Save</button>
+                    <button class="btn-cancel" onclick="cancelEditPhone()">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🏢</div>
+              <div class="info-content">
+                <h3>Support Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM (EST)</p>
+                <p>Saturday - Sunday: 10:00 AM - 4:00 PM (EST)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <h3>Office Location</h3>
+                <p>123 Crypto Avenue<br>New York, NY 10001<br>United States</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input 
+                type="text" 
+                id="contactName" 
+                placeholder="Enter your full name" 
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input 
+                type="email" 
+                id="contactEmail" 
+                placeholder="Enter your email" 
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactPhone">Phone Number (Optional)</label>
+              <input 
+                type="tel" 
+                id="contactPhone" 
+                placeholder="Enter your phone number"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" required>
+                <option value="">Select a subject</option>
+                <option value="account-issue">Account Issues</option>
+                <option value="payment-issue">Payment Issues</option>
+                <option value="withdrawal-issue">Withdrawal Issues</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="investment-question">Investment Question</option>
+                <option value="general-inquiry">General Inquiry</option>
+                <option value="complaint">Complaint</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea 
+                id="contactMessage" 
+                placeholder="Describe your issue or question in detail..." 
+                rows="6" 
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+
+          <div id="contactStatus" class="status-message"></div>
+        </section>
+      </div>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does a deposit take?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Deposits typically process within 1-24 hours depending on your payment method. Bank transfers may take up to 2-3 business days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What are the withdrawal limits?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>You can make up to 2 withdrawals per day. Minimum withdrawal is $800 USD equivalent or 10% of your total investment, whichever is higher.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do investments work?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Investments grow based on market rates which update every minute (+0.99%), plus your investment type's expected return rate. Your portfolio updates in real-time.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is my account secure?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Yes, we use industry-standard encryption and security protocols to protect your personal and financial information. Your data is stored securely.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I change my payment method?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Yes, you can change your payment method for deposits and withdrawals at any time from your account settings.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What currencies do you support?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>We support USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, INR, MXN, BRL, and NGN (Nigerian Naira).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Emergency Contact -->
+      <section class="emergency-section">
+        <div class="emergency-card">
+          <h2>🚨 Urgent Issue?</h2>
+          <p>If you're experiencing a critical issue with your account or payment, please call us immediately:</p>
+          <a href="tel:+15551234567" class="emergency-phone">+1 (555) 123-4567</a>
+          <p class="emergency-hours">Available 24/7 for critical issues</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 ApexCrypto. All rights reserved. | Secure • Fast • Reliable</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="Contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - ApexCrypto</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <a href="home_crypto.html" class="logo">
+        <img src="./Images/Screenshot_2026-03-11_111330-removebg-preview.png" alt="ApexCrypto logo">
+        <span>ApexCrypto</span>
+      </a>
+      <ul>
+        <li><a href="home_crypto.html">Home</a></li>
+        <li><a href="Prices.html" data-auth-only>Prices</a></li>
+        <li><a href="Payment.html" data-auth-only>Payment</a></li>
+        <li><a href="Contact.html" data-auth-only>Contact Us</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html">Log In</a>
+        <a href="register.html" class="signup active-auth">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- REGISTER SECTION -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <h1>Create Your Account</h1>
+      <p class="auth-subtitle">Join millions of users trading crypto</p>
+      
+      <form class="auth-form" id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            placeholder="Enter your full name"
+            required
+            aria-label="Full Name"
+          >
+          <span class="error-msg" id="fullnameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+            aria-label="Email Address"
+          >
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Create a password (min 8 characters)"
+              required
+              minlength="8"
+              aria-label="Password"
+            >
+            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+              <span>👁️</span>
+            </button>
+          </div>
+          <span class="error-msg" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="confirm-password" 
+              name="confirm-password" 
+              placeholder="Confirm your password"
+              required
+              aria-label="Confirm Password"
+            >
+            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+              <span>👁️</span>
+            </button>
+          </div>
+          <span class="error-msg" id="confirmPasswordError"></span>
+        </div>
+
+        <label class="terms-checkbox">
+          <input type="checkbox" name="terms" required aria-label="Accept terms and conditions">
+          <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <span class="error-msg" id="termsError"></span>
+
+        <button type="submit" class="auth-btn">Create Account</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+
+      <div class="social-auth">
+        <button class="social-btn google-btn" aria-label="Continue with Google">
+          <span>🔷</span> Google
+        </button>
+        <button class="social-btn github-btn" aria-label="Continue with GitHub">
+          <span>⬛</span> GitHub
+        </button>
+      </div>
+
+      <p class="auth-footer">
+        Already have an account? 
+        <a href="login.html" class="auth-link">Log In</a>
+      </p>
+    </div>
+  </section>
+
+  <script src="common.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

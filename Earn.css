@@ -1,0 +1,594 @@
+/* ===== EARN PAGE STYLES ===== */
+
+main {
+  min-height: calc(100vh - 62px);
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #080d18 0%, #0a1628 100%);
+}
+
+.earn-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ===== HERO SECTION ===== */
+.earn-hero {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.1), rgba(0, 168, 232, 0.1));
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.earn-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.earn-hero .subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.btn-primary-large {
+  display: inline-block;
+  background: linear-gradient(135deg, #00d4aa, #00a8e8);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary-large:hover {
+  box-shadow: 0 10px 30px rgba(0, 212, 170, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ===== BENEFITS SECTION ===== */
+.earnings-overview {
+  margin-bottom: 80px;
+}
+
+.earnings-overview h2,
+.earning-products h2,
+.comparison-section h2,
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.8), rgba(10, 14, 26, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  border-color: rgba(0, 212, 170, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== PRODUCTS SECTION ===== */
+.earning-products {
+  margin-bottom: 80px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.8), rgba(10, 14, 26, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  border-color: rgba(0, 212, 170, 0.3);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+.product-header {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.product-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-header h3 {
+  font-size: 1.4rem;
+  color: white;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+}
+
+.apy-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #00d4aa, #00a8e8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.product-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  margin-bottom: 25px;
+}
+
+.features-list h4 {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.features-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+.product-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 212, 170, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 212, 170, 0.15);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1rem;
+  color: #00d4aa;
+  font-weight: 700;
+}
+
+.btn-product {
+  display: block;
+  background: linear-gradient(135deg, #00d4aa, #00a8e8);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-product:hover {
+  box-shadow: 0 8px 20px rgba(0, 212, 170, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===== COMPARISON TABLE ===== */
+.comparison-section {
+  margin-bottom: 80px;
+}
+
+.comparison-table-container {
+  overflow-x: auto;
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.8), rgba(10, 14, 26, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table thead {
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.comparison-table th {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
+
+.comparison-table td {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.risk-low {
+  color: #00d4aa;
+  font-weight: 700;
+}
+
+.risk-medium {
+  color: #ff9a00;
+  font-weight: 700;
+}
+
+.risk-high {
+  color: #ff6464;
+  font-weight: 700;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section {
+  margin-bottom: 80px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.8), rgba(10, 14, 26, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(0, 212, 170, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-stars {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 15px;
+}
+
+.author-name {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.author-role {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.15), rgba(0, 168, 232, 0.15));
+  border: 2px solid rgba(0, 212, 170, 0.3);
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  backdrop-filter: blur(10px);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #00d4aa, #00a8e8);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.btn-cta:hover {
+  box-shadow: 0 10px 30px rgba(0, 212, 170, 0.4);
+  transform: translateY(-3px);
+}
+
+.cta-note {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.cta-note a {
+  color: #00d4aa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cta-note a:hover {
+  color: #00a8e8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(to bottom, #0d1117, #0a0e1a);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .earn-container {
+    padding: 20px 10px;
+  }
+
+  .earn-hero {
+    padding: 50px 20px;
+  }
+
+  .earn-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .earnings-overview h2,
+  .earning-products h2,
+  .comparison-section h2,
+  .testimonials-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .products-grid,
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .earn-hero {
+    padding: 40px 20px;
+  }
+
+  .earn-hero h1 {
+    font-size: 2rem;
+  }
+
+  .earn-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .earnings-overview h2,
+  .earning-products h2,
+  .comparison-section h2,
+  .testimonials-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .benefit-grid,
+  .products-grid,
+  .testimonials-grid {
+    gap: 15px;
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 15px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  .earn-hero {
+    padding: 30px 15px;
+  }
+
+  .earn-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .earn-hero .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary-large,
+  .btn-cta,
+  .btn-product {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .earnings-overview h2,
+  .earning-products h2,
+  .comparison-section h2,
+  .testimonials-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  .benefit-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 30px 15px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+}

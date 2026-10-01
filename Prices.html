@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Live cryptocurrency prices, market data, and crypto trends">
+  <title>Live Crypto Prices - ApexCrypto</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="Prices.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <a href="home_crypto.html" class="logo">
+        <img src="./Images/Screenshot_2026-03-11_111330-removebg-preview.png" alt="ApexCrypto logo">
+        <span>ApexCrypto</span>
+      </a>
+
+      <ul>
+        <li><a href="home_crypto.html">Home</a></li>
+        <li><a href="Prices.html" class="active-nav" data-auth-only>Prices</a></li>
+        <li><a href="Payment.html" data-auth-only>Payment</a></li>
+        <li><a href="Contact.html" data-auth-only>Contact Us</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="register.html" class="btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO STATS -->
+  <section class="price-hero">
+    <h1>Live cryptocurrency prices</h1>
+    <div class="market-stats">
+      <p class="market-cap">The global crypto currency market cap today is $2.6T <span class="down">-0.37%</span></p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <p class="stat-label">24H volume</p>
+          <p class="stat-value">$92.5B</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-label">Dominance</p>
+          <p class="stat-value">54.01% BTC</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-label">ETH gas</p>
+          <p class="stat-value">0.1 Gwei</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-label">Coins</p>
+          <p class="stat-value">28,643</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-label">Fear & Greed</p>
+          <p class="stat-value">27</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRENDING TOKENS -->
+  <section class="trending">
+    <h2>Top crypto tokens trending today</h2>
+    <div class="trending-cards">
+
+      <div class="trend-card">
+        <p class="card-title">Hot tokens</p>
+        <p class="card-sub">Top trending tokens</p>
+        <div class="coin-row">
+          <span class="coin-name">ZRO</span>
+          <div>
+            <p class="coin-price">$2.0363</p>
+            <p class="down">-5.14%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">QNT</span>
+          <div>
+            <p class="coin-price">$63.669</p>
+            <p class="up">+1.67%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">ESP</span>
+          <div>
+            <p class="coin-price">$0.1059</p>
+            <p class="up">+5.12%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <p class="card-title">Buzzing on X</p>
+        <p class="card-sub">Social sentiment movers</p>
+        <div class="coin-row">
+          <span class="coin-name">BTC</span>
+          <div>
+            <p class="coin-price">$70,303.84</p>
+            <p class="down">-0.59%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">ETH</span>
+          <div>
+            <p class="coin-price">$2,067.21</p>
+            <p class="down">-0.47%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">SOL</span>
+          <div>
+            <p class="coin-price">$86.643</p>
+            <p class="down">-1.00%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <p class="card-title">Top movers</p>
+        <p class="card-sub">Biggest daily gainers and losers</p>
+        <div class="coin-row">
+          <span class="coin-name">TRUMP</span>
+          <div>
+            <p class="coin-price">$0.03882</p>
+            <p class="down">-0.79%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">DOGEX</span>
+          <div>
+            <p class="coin-price">$0.062629</p>
+            <p class="up">+1214.84%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">FELIS</span>
+          <div>
+            <p class="coin-price">$0.064571</p>
+            <p class="up">+1068.42%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <p class="card-title">Newly listed</p>
+        <p class="card-sub">Post-listing momentum</p>
+        <div class="coin-row">
+          <span class="coin-name">ESP</span>
+          <div>
+            <p class="coin-price">$0.1059</p>
+            <p class="up">+5.12%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">FOGO</span>
+          <div>
+            <p class="coin-price">$0.02317</p>
+            <p class="up">+1.78%</p>
+          </div>
+        </div>
+        <div class="coin-row">
+          <span class="coin-name">BREV</span>
+          <div>
+            <p class="coin-price">$0.1321</p>
+            <p class="up">+2.10%</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICES TABLE -->
+  <section class="prices-table">
+    <h2>Cryptocurrency prices by market cap</h2>
+
+    <div class="table-filters" role="toolbar" aria-label="Price filters">
+      <div class="filters-left">
+        <button class="filter-btn active" aria-pressed="true">All Coins</button>
+        <button class="filter-btn" aria-pressed="false">Top gainers</button>
+        <button class="filter-btn" aria-pressed="false">Top losers</button>
+        <button class="filter-btn" aria-pressed="false">New</button>
+        <button class="filter-btn" aria-pressed="false">Most popular</button>
+        <button class="filter-btn" aria-pressed="false">Favorites</button>
+      </div>
+      <div class="filters-right">
+        <select class="filter-select" aria-label="Currency">
+          <option>USD</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+        <select class="filter-select" aria-label="Category">
+          <option>All categories</option>
+          <option>DeFi</option>
+          <option>Layer 1</option>
+          <option>Layer 2</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>24H change</th>
+          <th>24H chart</th>
+          <th>Market cap</th>
+          <th>24H volume</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="coin-cell"><img src="assets/btc.png" alt="Bitcoin" width="24" height="24"> Bitcoin <span class="ticker">BTC</span></td>
+          <td>$70,290.76</td>
+          <td class="down">-0.59%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$1.41T</td>
+          <td>$40.21B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="coin-cell"><img src="assets/eth.png" alt="Ethereum" width="24" height="24"> Ethereum <span class="ticker">ETH</span></td>
+          <td>$2,066.59</td>
+          <td class="down">-0.47%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$249.47B</td>
+          <td>$18.57B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="coin-cell"><img src="assets/usdt.png" alt="Tether" width="24" height="24"> Tether <span class="ticker">USDT</span></td>
+          <td>$1</td>
+          <td class="up">+0.01%</td>
+          <td><img src="assets/chart-flat.png" alt="Price flat chart" width="80"></td>
+          <td>$183.98B</td>
+          <td>$77.5B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="coin-cell"><img src="assets/bnb.png" alt="BNB" width="24" height="24"> BNB <span class="ticker">BNB</span></td>
+          <td>$650.53</td>
+          <td class="down">-0.45%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$88.73B</td>
+          <td>$1.57B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="coin-cell"><img src="assets/xrp.png" alt="XRP" width="24" height="24"> XRP <span class="ticker">XRP</span></td>
+          <td>$1.3807</td>
+          <td class="down">-0.99%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$84.54B</td>
+          <td>$1.94B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="coin-cell"><img src="assets/usdc.png" alt="USD Coin" width="24" height="24"> USD Coin <span class="ticker">USDC</span></td>
+          <td>$0.9957</td>
+          <td class="down">-0.28%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$78.46B</td>
+          <td>$11.79B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="coin-cell"><img src="assets/doge.png" alt="Dogecoin" width="24" height="24"> Dogecoin <span class="ticker">DOGE</span></td>
+          <td>$0.09442</td>
+          <td class="up">+0.55%</td>
+          <td><img src="assets/chart-up.png" alt="Price up chart" width="80"></td>
+          <td>$14.49B</td>
+          <td>$1.07B</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="coin-cell"><img src="assets/ada.png" alt="Cardano" width="24" height="24"> Cardano <span class="ticker">ADA</span></td>
+          <td>$0.2624</td>
+          <td class="down">-1.27%</td>
+          <td><img src="assets/chart-down.png" width="80"></td>
+          <td>$9.47B</td>
+          <td>$368.36M</td>
+          <td><a href="#" class="trade-btn">Trade</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- USER SPACE -->
+  <section class="user-space">
+    <div class="section-header">
+      <div>
+        <h2>Your trading space</h2>
+        <p>Track your portfolio, watchlist, and active positions in one place.</p>
+        <div class="live-status" id="live-status">Live • syncing…</div>
+      </div>
+      <a href="#" class="view-all">Open account</a>
+    </div>
+
+    <div class="user-dashboard">
+      <div class="dashboard-main">
+        <div class="portfolio-card">
+          <div class="portfolio-header">
+            <div>
+              <p class="portfolio-label">Portfolio value</p>
+              <h3 class="portfolio-balance" id="portfolio-balance">$0.00</h3>
+            </div>
+            <span class="portfolio-pill" id="portfolio-change">+0.0%</span>
+          </div>
+          <div class="portfolio-stats">
+            <div>
+              <p class="stat-label">Available cash</p>
+              <p class="stat-value" id="portfolio-cash">$0.00</p>
+            </div>
+            <div>
+              <p class="stat-label">Open positions</p>
+              <p class="stat-value" id="portfolio-positions">0</p>
+            </div>
+            <div>
+              <p class="stat-label">24h P&amp;L</p>
+              <p class="stat-value" id="portfolio-pnl">$0.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="watchlist-card">
+          <h3>Watchlist</h3>
+          <ul class="watchlist-list">
+            <li><span>BTC</span><strong class="up" data-watch="bitcoin">$0.00</strong></li>
+            <li><span>ETH</span><strong class="down" data-watch="ethereum">$0.00</strong></li>
+            <li><span>SOL</span><strong class="up" data-watch="solana">$0.00</strong></li>
+            <li><span>DOGE</span><strong class="up" data-watch="dogecoin">$0.00</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dashboard-side">
+        <div class="trade-card">
+          <div class="trade-tabs">
+            <button class="trade-tab active" type="button">Buy</button>
+            <button class="trade-tab" type="button">Sell</button>
+          </div>
+
+          <label class="trade-field">
+            <span>Coin</span>
+            <select id="trade-coin">
+              <option value="bitcoin">Bitcoin</option>
+              <option value="ethereum">Ethereum</option>
+              <option value="solana">Solana</option>
+              <option value="dogecoin">Dogecoin</option>
+            </select>
+          </label>
+
+          <label class="trade-field">
+            <span>Amount</span>
+            <input id="trade-amount" type="number" min="0.01" step="0.01" value="0.25">
+          </label>
+
+          <div class="trade-summary">
+            <span>Estimated cost</span>
+            <strong id="trade-estimate">$0.00</strong>
+          </div>
+
+          <button class="trade-action" type="button">Place order</button>
+        </div>
+
+        <div class="activity-card">
+          <h3>Recent activity</h3>
+          <ul class="activity-list">
+            <li><span>Buy BTC</span><strong>+$420.50</strong></li>
+            <li><span>Sell ETH</span><strong>-$85.10</strong></li>
+            <li><span>Buy SOL</span><strong>+$312.00</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="holdings-card">
+        <h3>My holdings</h3>
+        <div class="holdings-list">
+          <div class="holding-row">
+            <div><strong>BTC</strong><span>0.42 BTC</span></div>
+            <div><span>Value</span><strong class="holding-value" data-asset="bitcoin">$0.00</strong></div>
+            <div><span>24h</span><strong class="holding-pnl up" data-asset-pnl="bitcoin">$0.00</strong></div>
+          </div>
+          <div class="holding-row">
+            <div><strong>ETH</strong><span>2.10 ETH</span></div>
+            <div><span>Value</span><strong class="holding-value" data-asset="ethereum">$0.00</strong></div>
+            <div><span>24h</span><strong class="holding-pnl down" data-asset-pnl="ethereum">$0.00</strong></div>
+          </div>
+          <div class="holding-row">
+            <div><strong>SOL</strong><span>15.00 SOL</span></div>
+            <div><span>Value</span><strong class="holding-value" data-asset="solana">$0.00</strong></div>
+            <div><span>24h</span><strong class="holding-pnl up" data-asset-pnl="solana">$0.00</strong></div>
+          </div>
+          <div class="holding-row">
+            <div><strong>DOGE</strong><span>5000 DOGE</span></div>
+            <div><span>Value</span><strong class="holding-value" data-asset="dogecoin">$0.00</strong></div>
+            <div><span>24h</span><strong class="holding-pnl up" data-asset-pnl="dogecoin">$0.00</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BASKETS -->
+  <section class="baskets">
+    <div class="section-header">
+      <div>
+        <h2>Baskets</h2>
+        <p>Diversify your crypto portfolio with curated coin baskets</p>
+      </div>
+      <a href="#" class="view-all">View all</a>
+    </div>
+    <div class="basket-cards">
+      <div class="basket-card">
+        <img src="assets/meme-basket.png" alt="meme">
+        <span class="most-traded">Most Traded</span>
+        <h3>Meme</h3>
+        <p class="up">+97.69%</p>
+        <p class="basket-period">1 month</p>
+      </div>
+      <div class="basket-card">
+        <img src="assets/defi-basket.png" alt="defi">
+        <span class="most-traded">Most Traded</span>
+        <h3>DeFi</h3>
+        <p class="up">+28.73%</p>
+        <p class="basket-period">1 month</p>
+      </div>
+      <div class="basket-card">
+        <img src="assets/btceth-basket.png" alt="btc-eth">
+        <span class="most-traded">Most Traded</span>
+        <h3>BTC-ETH Duo</h3>
+        <p class="up">+137.75%</p>
+        <p class="basket-period">4 months</p>
+      </div>
+      <div class="basket-card">
+        <img src="assets/big3-basket.png" alt="big3">
+        <span class="most-traded">Most Traded</span>
+        <h3>Big 3</h3>
+        <p class="up">+215.52%</p>
+        <p class="basket-period">4 months</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARN -->
+  <section class="earn">
+    <div class="section-header">
+      <div>
+        <h2>Earn</h2>
+        <p>Securely grow your assets with fixed reward rates and regular payouts</p>
+      </div>
+      <a href="#" class="view-all">View all</a>
+    </div>
+    <div class="earn-cards">
+      <div class="earn-card">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="#E84E5A"></circle>
+          <text x="20" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="white" font-family="Arial">$</text>
+        </svg>
+        <p class="earn-name">Proof Of Liquidity</p>
+        <p>Up to <span class="up">6%</span> p.a.</p>
+      </div>
+      <div class="earn-card">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="#3B5998"></circle>
+          <text x="20" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="white" font-family="Arial">$</text>
+        </svg>
+        <p class="earn-name">dYdX</p>
+        <p>Up to <span class="up">3.26%</span> p.a.</p>
+      </div>
+      <div class="earn-card">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="#E84142"></circle>
+          <text x="20" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="white" font-family="Arial">$</text>
+        </svg>
+        <p class="earn-name">Avalanche</p>
+        <p>Up to <span class="up">5.5%</span> p.a.</p>
+      </div>
+      <div class="earn-card">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="#2C7DF7"></circle>
+          <text x="20" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="white" font-family="Arial">$</text>
+        </svg>
+        <p class="earn-name">Tezos</p>
+        <p>Up to <span class="up">3%</span> p.a.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="disclaimer">
+    <div class="disclaimer-container">
+      <div class="disclaimer-text">
+        <p>The purpose of this website is solely to display information regarding the products and services available on the ApexCrypto App. It is not intended to offer access to any of such products and services. You may obtain access to such products and services on the ApexCrypto App.</p>
+        <p>Please note that the availability of the products and services on the ApexCrypto App is subject to jurisdictional limitations. ApexCrypto may not offer certain products, features and/or services on the ApexCrypto App in certain jurisdictions due to potential or actual regulatory restrictions.</p>
+      </div>
+      <div class="badges">
+        <div class="badge-item" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,#1199FA,#0f76d3);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;letter-spacing:0.5px;">AICPA</div>
+          <span style="font-size:11px;color:#6b7280;">AICPA</span>
+        </div>
+        <div class="badge-item" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,#16a34a,#15803d);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;letter-spacing:0.5px;">AGS</div>
+          <span style="font-size:11px;color:#6b7280;">AGS</span>
+        </div>
+        <div class="badge-item" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;letter-spacing:0.5px;">SGS</div>
+          <span style="font-size:11px;color:#6b7280;">SGS</span>
+        </div>
+        <div class="badge-item" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#6d28d9);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;letter-spacing:0.5px;">PCI</div>
+          <span style="font-size:11px;color:#6b7280;">PCI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="./Images/Screenshot_2026-03-11_111330-removebg-preview.png" alt="logo" width="26">
+        <span>ApexCrypto</span>
+      </div>
+      <div class="footer-lang">
+        🌐 English | USD
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <p class="col-heading">Products</p>
+        <a href="#">ApexCrypto App</a>
+        <a href="#">Advanced</a>
+        <a href="#">Onchain</a>
+        <a href="#">Level Up</a>
+      </div>
+      <div class="footer-col">
+        <p class="col-heading">Markets</p>
+        <a href="#">Crypto</a>
+        <p class="col-heading" style="margin-top: 16px;">Features</p>
+        <a href="#">Cards</a>
+        <a href="#">Baskets</a>
+        <a href="#">Earn</a>
+        <a href="#">Staking</a>
+        <a href="#">DeFi Staking</a>
+        <a href="#">Pay</a>
+        <a href="#">Prime</a>
+        <a href="#">NFT</a>
+      </div>
+      <div class="footer-col">
+        <p class="col-heading">Businesses</p>
+        <a href="#">Custody</a>
+        <a href="#">Institutions</a>
+        <a href="#">Trading API</a>
+        <a href="#">Pay for Merchant</a>
+        <a href="#">MM Programme</a>
+        <a href="#">VIP Portal</a>
+        <a href="#">Predictions</a>
+        <p class="col-heading" style="margin-top: 16px;">Developers</p>
+        <a href="#">Cronos PoS</a>
+        <a href="#">Cronos EVM</a>
+        <a href="#">Cronos zkEVM</a>
+        <a href="#">Cronos Play SDK</a>
+        <a href="#">Pay SDK</a>
+        <a href="#">AI Agent SDK</a>
+      </div>
+      <div class="footer-col">
+        <p class="col-heading">Resources</p>
+        <a href="#">Research</a>
+        <a href="#">Market Updates</a>
+        <a href="#">University</a>
+        <a href="#">Learn</a>
+        <a href="#">BTC/USD Converter</a>
+        <a href="#">Glossary</a>
+        <a href="#">Price Widgets</a>
+        <a href="#">Telegram Bot</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-col">
+        <p class="col-heading">Company</p>
+        <a href="#">About Us</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Careers</a>
+        <a href="#">Partners</a>
+        <a href="#">Security</a>
+        <a href="#">Proof of Reserves</a>
+        <a href="#">Affiliate</a>
+        <a href="#">Licenses & Registrations</a>
+        <a href="#">Listing</a>
+        <a href="#">Climate</a>
+        <a href="#">Verify</a>
+      </div>
+      <div class="footer-col">
+        <p class="col-heading">Updates</p>
+        <a href="#">X</a>
+        <a href="#">What's Trending</a>
+        <a href="#">Product News</a>
+        <a href="#">Events</a>
+        <a href="#">Reddit</a>
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Linkedin</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2018 - 2026 ApexCrypto. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Notice</a>
+        <span>|</span>
+        <a href="#">Status</a>
+        <span>|</span>
+        <a href="#">Cookie Preferences</a>
+        <span>|</span>
+        <a href="#">Location and Language</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="crypto-data.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - ApexCrypto</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <a href="home_crypto.html" class="logo">
+        <img src="./Images/Screenshot_2026-03-11_111330-removebg-preview.png" alt="ApexCrypto logo">
+        <span>ApexCrypto</span>
+      </a>
+      <ul>
+        <li><a href="home_crypto.html">Home</a></li>
+        <li><a href="Prices.html" data-auth-only>Prices</a></li>
+        <li><a href="Payment.html" data-auth-only>Payment</a></li>
+        <li><a href="Contact.html" data-auth-only>Contact Us</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html" class="active-auth">Log In</a>
+        <a href="register.html" class="signup">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN SECTION -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <h1>Welcome Back</h1>
+      <p class="auth-subtitle">Log in to your ApexCrypto account</p>
+      
+      <form class="auth-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+            aria-label="Email Address"
+          >
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Enter your password"
+              required
+              aria-label="Password"
+            >
+            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+              <span>👁️</span>
+            </button>
+          </div>
+          <span class="error-msg" id="passwordError"></span>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" name="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="auth-btn">Log In</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+
+      <div class="social-auth">
+        <button class="social-btn google-btn" aria-label="Continue with Google">
+          <span>🔷</span> Google
+        </button>
+        <button class="social-btn github-btn" aria-label="Continue with GitHub">
+          <span>⬛</span> GitHub
+        </button>
+      </div>
+
+      <p class="auth-footer">
+        Don't have an account? 
+        <a href="register.html" class="auth-link">Sign Up</a>
+      </p>
+    </div>
+  </section>
+
+  <script src="common.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
